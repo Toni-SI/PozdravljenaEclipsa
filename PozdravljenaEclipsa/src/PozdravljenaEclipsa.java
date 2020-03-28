@@ -30,7 +30,19 @@ public class PozdravljenaEclipsa {
 			// TODO Auto-generated catch block
 			System.out.println("Prislo je do napake pri praznenju steklenice.");
 		}
+		//izpraznimo še malo
+		try {
+			ps.izprazni(70);
+			System.out.println("Iz steklenice " + ps.getZnamka() + " sem izpraznil 100ml piva.");
+			System.out.println("Ostane se " + ps.getkolicinaVsebine() + "ml piva.");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("Prislo je do napake pri praznenju steklenice.");
+		}
 	
+		
+		
+		
 	}
 
 }
